@@ -39,7 +39,7 @@ a {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 10000;
 
     display: flex;
     justify-content: space-between;
@@ -48,9 +48,8 @@ a {
 
     padding: 22px 6vw;
 
-    background: rgba(246, 244, 239, 0.95);
+    background: rgba(246, 244, 239, 0.96);
     backdrop-filter: blur(18px);
-
     border-bottom: 1px solid var(--line);
 }
 
@@ -480,8 +479,15 @@ body {
     .gallery-item img {
         max-width: 100%;
     }
+    body {
+        padding-top: 170px;
+    }
 }
 
 body {
-    padding-top: 100px;
+    margin: 0;
+    padding-top: 80px;
+    font-family: Inter, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
 }
