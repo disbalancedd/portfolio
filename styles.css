@@ -410,12 +410,12 @@ h3 {
 .lightbox {
     position: fixed;
     inset: 0;
-    z-index: 999;
+    z-index: 9999;
     display: none;
     align-items: center;
     justify-content: center;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.94);
 }
 
 .lightbox.active {
@@ -423,19 +423,26 @@ h3 {
 }
 
 .lightbox img {
-    max-width: 90vw;
-    max-height: 90vh;
+    width: auto !important;
+    height: auto !important;
+    max-width: 95vw;
+    max-height: 88vh;
     object-fit: contain;
-    border-radius: 16px;
+    border-radius: 12px;
 }
 
 .lightbox-close {
     position: fixed;
-    top: 24px;
-    right: 32px;
+    top: 18px;
+    right: 22px;
+    z-index: 10000;
+    width: 44px;
+    height: 44px;
     border: none;
-    background: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
     color: white;
-    font-size: 48px;
+    font-size: 36px;
+    line-height: 1;
     cursor: pointer;
 }
