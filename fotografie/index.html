@@ -166,6 +166,8 @@
         lightboxImg.src = this.href;
         lightbox.classList.add("active");
         document.body.style.overflow = "hidden";
+
+        document.querySelector(".header").style.display = "none";
     });
 });
 
@@ -173,6 +175,9 @@ function closeLightbox() {
     lightbox.classList.remove("active");
     lightboxImg.src = "";
     document.body.style.overflow = "";
+
+    document.querySelector(".header").style.display = "";
+
     window.scrollTo(window.scrollX, window.scrollY);
 }
 
