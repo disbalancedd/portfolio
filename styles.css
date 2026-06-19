@@ -446,3 +446,32 @@ h3 {
     line-height: 1;
     cursor: pointer;
 }
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.lightbox.active {
+    overflow: hidden;
+    touch-action: none;
+}
+
+@media (max-width: 720px) {
+    .lightbox {
+        padding: 12px;
+    }
+
+    .lightbox img {
+        max-width: 100vw;
+        max-height: 85vh;
+        border-radius: 10px;
+    }
+
+    .gallery-item,
+    .gallery-item img {
+        max-width: 100%;
+    }
+}

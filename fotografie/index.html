@@ -158,24 +158,28 @@
         const closeBtn = document.querySelector(".lightbox-close");
     
         document.querySelectorAll(".gallery-item").forEach(item => {
-            item.addEventListener("click", function (e) {
-                e.preventDefault();
-                lightboxImg.src = this.href;
-                lightbox.classList.add("active");
-            });
-        });
-    
-        closeBtn.addEventListener("click", () => {
-            lightbox.classList.remove("active");
-            lightboxImg.src = "";
-        });
-    
-        lightbox.addEventListener("click", (e) => {
-            if (e.target === lightbox) {
-                lightbox.classList.remove("active");
-                lightboxImg.src = "";
-            }
-        });
+    item.addEventListener("click", function (e) {
+        e.preventDefault();
+        lightboxImg.src = this.href;
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+    });
+});
+
+function closeLightbox() {
+    lightbox.classList.remove("active");
+    lightboxImg.src = "";
+    document.body.style.overflow = "";
+    window.scrollTo(window.scrollX, window.scrollY);
+}
+
+closeBtn.addEventListener("click", closeLightbox);
+
+lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+        closeLightbox();
+    }
+});
     </script>
 
 </body>
