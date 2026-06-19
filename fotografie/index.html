@@ -146,6 +146,38 @@
     <footer class="footer">
         <p>© 2026 Andrii Voloshchenko — Mediengestaltung & Fotografie</p>
     </footer>
+
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="">
+    </div>
+    
+    <script>
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.querySelector(".lightbox-close");
+    
+        document.querySelectorAll(".gallery-item").forEach(item => {
+            item.addEventListener("click", function (e) {
+                e.preventDefault();
+                lightboxImg.src = this.href;
+                lightbox.classList.add("active");
+            });
+        });
+    
+        closeBtn.addEventListener("click", () => {
+            lightbox.classList.remove("active");
+            lightboxImg.src = "";
+        });
+    
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove("active");
+                lightboxImg.src = "";
+            }
+        });
+    </script>
+
 </body>
 
 </html>
