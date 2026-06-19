@@ -118,6 +118,14 @@ h3 {
     line-height: 1.55
 }
 
+.lead-small {
+    max-width: 700px;
+    margin-bottom: 32px;
+    color: var(--muted);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 .actions {
     display: flex;
     flex-wrap: wrap;
