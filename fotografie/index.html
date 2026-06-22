@@ -156,18 +156,29 @@
     </div>
     
     <script>
-        const lightbox = document.getElementById("lightbox");
-        const lightboxImg = document.getElementById("lightbox-img");
-        const closeBtn = document.querySelector(".lightbox-close");
-    
-        document.querySelectorAll(".gallery-item").forEach(item => {
-    item.addEventListener("click", function (e) {
-        e.preventDefault();
-        lightboxImg.src = this.href;
-        lightbox.classList.add("active");
-        document.body.style.overflow = "hidden";
+       const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".lightbox-close");
+const prevBtn = document.querySelector(".lightbox-prev");
+const nextBtn = document.querySelector(".lightbox-next");
 
-        document.querySelector(".header").style.display = "none";
+const images = [...document.querySelectorAll(".gallery-item")];
+
+let currentIndex = 0;
+
+function openImage(index) {
+    currentIndex = index;
+    lightboxImg.src = images[index].href;
+
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+    document.querySelector(".header").style.display = "none";
+}
+
+images.forEach((item, index) => {
+    item.addEventListener("click", (e) => {
+        e.preventDefault();
+        openImage(index);
     });
 });
 
@@ -175,12 +186,21 @@ function closeLightbox() {
     lightbox.classList.remove("active");
     lightboxImg.src = "";
     document.body.style.overflow = "";
-
     document.querySelector(".header").style.display = "";
-
-    window.scrollTo(window.scrollX, window.scrollY);
 }
 
+function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].href;
+}
+
+function prevImage() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].href;
+}
+
+nextBtn.addEventListener("click", nextImage);
+prevBtn.addEventListener("click", prevImage);
 closeBtn.addEventListener("click", closeLightbox);
 
 lightbox.addEventListener("click", (e) => {
@@ -189,6 +209,16 @@ lightbox.addEventListener("click", (e) => {
     }
 });
     </script>
+
+<div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+
+    <button class="lightbox-prev">&#10094;</button>
+
+    <img id="lightbox-img" src="" alt="">
+
+    <button class="lightbox-next">&#10095;</button>
+</div>
 
 </body>
 
