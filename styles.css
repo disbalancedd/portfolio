@@ -524,3 +524,30 @@ body {
         font-size: 32px;
     }
 }
+
+.scroll-top {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 100000;
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.scroll-top.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-top:hover {
+    transform: translateY(-3px);
+}
