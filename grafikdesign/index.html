@@ -2,104 +2,221 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grafikdesign – Andrii Laska</title>
-    <meta name="description"
-        content="Portfolio von Andrii Laska – Mediengestaltung, Fotografie, Printmedien und Webdesign." />
-    <link rel="stylesheet" href="/styles.css" />
+    <meta name="description" content="Grafikdesign-Portfolio von Andrii Laska – Werbung, Kampagnen, Printmedien und visuelle Kommunikation.">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 
 <body>
-    <header class="header"><a class="logo" href="/">Andrii Laska</a>
-        <nav class="nav">
-            <a href="/fotografie/">Fotografie</a>
-            <a href="/grafikdesign/">Grafikdesign</a>
-            <a href="/webdesign/">Webdesign</a>
-            <a href="/about/">Über mich</a>
-            <a href="/kontakt/">Kontakt</a></nav>
-    </header>
-    <main>
 
-        <section class="page-hero">
-            <p class="kicker">Grafikdesign</p>
-    
-            <h1>Grafikdesign, Werbung & visuelle Kommunikation.</h1>
-    
-            <p class="lead">
-                Die gezeigten Arbeiten entstanden überwiegend im Rahmen meiner
-                Ausbildung zum Mediengestalter Digital und Print. Das Portfolio
-                umfasst Kampagnen, Printmedien, Werbemittel und digitale Medien.
-            </p>
-    
-            <div class="actions">
-                <a class="button dark" href="#konzepte">Kampagnen & Konzepte</a>
-                <a class="button" href="#print">Printmedien</a>
-                <a class="button" href="#werbemittel">Werbemittel</a>
-                <a class="button" href="#social">Social Media</a>
-            </div>
-        </section>
-    
-        <section class="section" id="konzepte">
-            <h2>Kampagnen & Konzepte</h2>
-            <p class="lead-small">
-                Ganzheitliche Gestaltungskonzepte mit Anwendungen für verschiedene Medien.
-            </p>
-    
-            <div class="gallery">
-                <a class="gallery-item" href="/assets/images/grafikdesign/globana-fashion-sale-konzept.jpg">
-                    <img src="/assets/images/grafikdesign/globana-fashion-sale-konzept.jpg" alt="Fashion Sale Konzept">
-                </a>
-    
-                <a class="gallery-item" href="/assets/images/grafikdesign/summerstage-konzept.jpg">
-                    <img src="/assets/images/grafikdesign/summerstage-konzept.jpg" alt="Summer Stage Konzept">
-                </a>
-            </div>
-        </section>
-    
-        <section class="section" id="print">
-            <h2>Printmedien</h2>
-            <p class="lead-small">
-                Flyer, Plakate, Anzeigen und mehrseitige Layouts für Printanwendungen.
-            </p>
-    
-            <div class="gallery">
-                <a class="gallery-item" href="/assets/images/grafikdesign/wm-lounge.jpg">
-                    <img src="/assets/images/grafikdesign/wm-lounge.jpg" alt="WM Lounge Anzeige">
-                </a>
-            </div>
-        </section>
-    
-        <section class="section" id="werbemittel">
-            <h2>Werbemittel</h2>
-            <p class="lead-small">
-                Banner, Kederbanner, Messegrafiken und Monitoranzeigen.
-            </p>
-    
-            <div class="gallery">
-                <a class="gallery-item" href="/assets/images/grafikdesign/pronto-moda.jpg">
-                    <img src="/assets/images/grafikdesign/pronto-moda.jpg" alt="Pronto Moda Kederbanner">
-                </a>
-            </div>
-        </section>
-    
-        <section class="section" id="social">
-            <h2>Social Media</h2>
-            <p class="lead-small">
-                Digitale Werbemittel für Social Media und Online-Marketing.
-            </p>
-    
-            <div class="gallery">
-                <!-- Später Social-Media-Arbeiten hier einfügen -->
-            </div>
-        </section>
-    
-    </main>
-    <button id="scrollTopBtn" class="scroll-top">↑</button>
-    <script> const scrollTopBtn = document.getElementById("scrollTopBtn"); window.addEventListener("scroll", () => { if (window.scrollY > 500) { scrollTopBtn.classList.add("visible"); } else { scrollTopBtn.classList.remove("visible"); } }); scrollTopBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); }); </script>
-    <footer class="footer">
-        <p>© 2026 Andrii Voloshchenko — Mediengestaltung & Fotografie</p>
-    </footer>
+<header class="header">
+    <a class="logo" href="/">Andrii Laska</a>
+
+    <nav class="nav">
+        <a href="/fotografie/">Fotografie</a>
+        <a class="active" href="/grafikdesign/">Grafikdesign</a>
+        <a href="/webdesign/">Webdesign</a>
+        <a href="/about/">Über mich</a>
+        <a href="/kontakt/">Kontakt</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="page-hero">
+        <p class="kicker">Grafikdesign</p>
+
+        <h1>Grafikdesign, Werbung & visuelle Kommunikation.</h1>
+
+        <p class="lead">
+            Die gezeigten Arbeiten entstanden überwiegend im Rahmen meiner
+            Ausbildung zum Mediengestalter Digital und Print. Das Portfolio
+            umfasst Kampagnen, Printmedien, Werbemittel, Keyvisuals und
+            digitale Medien.
+        </p>
+
+        <div class="actions">
+            <a class="button dark" href="#kampagnen">Kampagnen</a>
+            <a class="button" href="#print">Print & Werbemittel</a>
+            <a class="button" href="#corporate">Corporate Design</a>
+            <a class="button" href="#keyvisuals">Keyvisuals</a>
+        </div>
+    </section>
+
+    <section class="section" id="kampagnen">
+        <h2>Kampagnen</h2>
+        <p class="lead-small">
+            Werbekampagnen und Gestaltungskonzepte mit Anwendungen für verschiedene Medien.
+        </p>
+
+        <div class="gallery">
+            <a class="gallery-item" href="/assets/images/grafikdesign/sky-du-mont-konzept.jpg">
+                <img src="/assets/images/grafikdesign/sky-du-mont-konzept.jpg" alt="Sky du Mont Konzept">
+            </a>
+
+            <a class="gallery-item" href="/assets/images/grafikdesign/summerstage-konzept.jpg">
+                <img src="/assets/images/grafikdesign/summerstage-konzept.jpg" alt="Summer Stage Konzept">
+            </a>
+
+            <a class="gallery-item" href="/assets/images/grafikdesign/globana-fashion-sale-konzept.jpg">
+                <img src="/assets/images/grafikdesign/globana-fashion-sale-konzept.jpg" alt="Fashion Sale Konzept">
+            </a>
+
+            <a class="gallery-item" href="/assets/images/grafikdesign/ost-rock-konzept.jpg">
+                <img src="/assets/images/grafikdesign/ost-rock-konzept.jpg" alt="Ost-Rock Konzept">
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="print">
+        <h2>Print & Werbemittel</h2>
+        <p class="lead-small">
+            Plakate, Flyer, Banner, Monitoranzeigen, Speisekarten und weitere Werbemittel.
+        </p>
+
+        <div class="gallery">
+            <a class="gallery-item" href="/assets/images/grafikdesign/harald-lesch.jpg">
+                <img src="/assets/images/grafikdesign/harald-lesch.jpg" alt="Harald Lesch Plakat">
+            </a>
+
+            <a class="gallery-item" href="/assets/images/grafikdesign/wm-lounge.jpg">
+                <img src="/assets/images/grafikdesign/wm-lounge.jpg" alt="WM Lounge">
+            </a>
+
+            <a class="gallery-item" href="/assets/images/grafikdesign/pronto-moda.jpg">
+                <img src="/assets/images/grafikdesign/pronto-moda.jpg" alt="Pronto Moda">
+            </a>
+
+            <a class="gallery-item" href="/assets/images/grafikdesign/imbissaufsteller.jpg">
+                <img src="/assets/images/grafikdesign/imbissaufsteller.jpg" alt="Imbissaufsteller">
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="corporate">
+        <h2>Corporate Design</h2>
+        <p class="lead-small">
+            Logoentwicklung, visuelle Systeme und einfache Branding-Anwendungen.
+        </p>
+
+        <div class="gallery">
+            <a class="gallery-item" href="/assets/images/grafikdesign/norwegen-logo.jpg">
+                <img src="/assets/images/grafikdesign/norwegen-logo.jpg" alt="Norwegen 2026 Logoentwicklung">
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="keyvisuals">
+        <h2>Keyvisuals</h2>
+        <p class="lead-small">
+            Digitale Keyvisuals, Social-Media-Motive und visuelle Konzepte für Kampagnen.
+        </p>
+
+        <div class="gallery">
+            <a class="gallery-item" href="/assets/images/grafikdesign/keyvisuals-261-konzept.jpg">
+                <img src="/assets/images/grafikdesign/keyvisuals-261-konzept.jpg" alt="Keyvisuals 261 Konzept">
+            </a>
+
+            <a class="gallery-item" href="/assets/images/grafikdesign/ost-rock-flyer.jpg">
+                <img src="/assets/images/grafikdesign/ost-rock-flyer.jpg" alt="Ost-Rock Flyer">
+            </a>
+        </div>
+    </section>
+
+</main>
+
+<button id="scrollTopBtn" class="scroll-top">↑</button>
+
+<div id="lightbox" class="lightbox">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&#10094;</button>
+    <img id="lightbox-img" src="" alt="">
+    <button class="lightbox-next">&#10095;</button>
+</div>
+
+<footer class="footer">
+    <p>© 2026 Andrii Voloshchenko — Mediengestaltung & Fotografie</p>
+</footer>
+
+<script>
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 500) {
+            scrollTopBtn.classList.add("visible");
+        } else {
+            scrollTopBtn.classList.remove("visible");
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".lightbox-close");
+    const prevBtn = document.querySelector(".lightbox-prev");
+    const nextBtn = document.querySelector(".lightbox-next");
+    const images = [...document.querySelectorAll(".gallery-item")];
+
+    let currentIndex = 0;
+
+    function openImage(index) {
+        currentIndex = index;
+        lightboxImg.src = images[index].href;
+        lightbox.classList.add("active");
+        document.body.style.overflow = "hidden";
+        document.querySelector(".header").style.display = "none";
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove("active");
+        lightboxImg.src = "";
+        document.body.style.overflow = "";
+        document.querySelector(".header").style.display = "";
+    }
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % images.length;
+        lightboxImg.src = images[currentIndex].href;
+    }
+
+    function prevImage() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        lightboxImg.src = images[currentIndex].href;
+    }
+
+    images.forEach((item, index) => {
+        item.addEventListener("click", (e) => {
+            e.preventDefault();
+            openImage(index);
+        });
+    });
+
+    closeBtn.addEventListener("click", closeLightbox);
+    nextBtn.addEventListener("click", nextImage);
+    prevBtn.addEventListener("click", prevImage);
+
+    lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (!lightbox.classList.contains("active")) return;
+
+        if (e.key === "Escape") closeLightbox();
+        if (e.key === "ArrowRight") nextImage();
+        if (e.key === "ArrowLeft") prevImage();
+    });
+</script>
+
 </body>
-
 </html>
