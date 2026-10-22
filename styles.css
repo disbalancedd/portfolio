@@ -681,3 +681,7 @@ h2 { font-size: clamp(36px, 3.7vw, 54px); line-height: 1.08; margin-left: -.025e
 
 /* Project detail images retain their intrinsic proportions. */
 .case-gallery .case-image img { aspect-ratio: auto; height: auto; object-fit: contain; }
+
+/* Keep button labels and arrows compact and vertically aligned. */
+.button { gap: 12px; }
+.button .icon-arrow { width: 17px; height: 17px; vertical-align: middle; }
