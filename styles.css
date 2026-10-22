@@ -678,3 +678,6 @@ h2 { font-size: clamp(36px, 3.7vw, 54px); line-height: 1.08; margin-left: -.025e
 
 /* Keep all graphic-design presentation sections on white. */
 .graphics-page main > .section { background: #fff; }
+
+/* Project detail images retain their intrinsic proportions. */
+.case-gallery .case-image img { aspect-ratio: auto; height: auto; object-fit: contain; }
