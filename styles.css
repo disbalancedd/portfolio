@@ -675,3 +675,6 @@ h2 { font-size: clamp(36px, 3.7vw, 54px); line-height: 1.08; margin-left: -.025e
   .nav { scrollbar-width: none; }
   .nav::-webkit-scrollbar { display: none; }
 }
+
+/* Keep all graphic-design presentation sections on white. */
+.graphics-page main > .section { background: #fff; }
